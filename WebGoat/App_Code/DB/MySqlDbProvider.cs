@@ -270,7 +270,8 @@ namespace OWASP.WebGoat.NET.App_Code.DB
 
         public string AddComment(string productCode, string email, string comment)
         {
-            string sql = "insert into Comments(productCode, email, comment) values ('" + productCode + "','" + email + "','" + comment + "');";
+//_BAD            string sql = "insert into Comments(productCode, email, comment) values ('" + productCode + "','" + email + "','" + comment + "');";
+//_GOOD            string sql = "insert into Comments(productCode, email, comment) values ('2','cx@cx.com','no comment');";
             string output = null;
             
             try
